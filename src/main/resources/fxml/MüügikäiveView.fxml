@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="300.0" prefWidth="400.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuarryDemo.controller.MüügiKäiveViewController">
+   <center>
+      <Accordion fx:id="accordion" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

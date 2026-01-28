@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuarryDemo.controller.TahtajadViewController">
+   <center>
+      <TreeView fx:id="treeView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <VBox alignment="CENTER" spacing="2.0">
+         <HBox alignment="CENTER">
+            <children>
+               <Label text="Sisestamiseks vajuta " />
+               <Label layoutX="10.0" layoutY="10.0" styleClass="keys" text="ENTER" />
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0">
+            <children>
+               <Label text="Kustutamiseks vajuta " />
+               <Label layoutX="10.0" layoutY="10.0" styleClass="keys" text="DELETE" />
+            </children>
+         </HBox>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+   </bottom>
+</BorderPane>

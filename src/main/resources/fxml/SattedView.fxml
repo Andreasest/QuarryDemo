@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="300.0" prefWidth="400.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuarryDemo.controller.SattedViewController">
+   <center>
+      <VBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Arve salvestus asukoht" />
+            <HBox spacing="5.0">
+               <children>
+                  <TextField fx:id="arveField" />
+                  <Button fx:id="browseArve" mnemonicParsing="false" onAction="#browseArveButtonAction" text="Otsi" />
+               </children>
+            </HBox>
+            <Label text="Autode nimekirja salvestuskoht" />
+            <HBox spacing="5.0">
+               <children>
+                  <TextField fx:id="autodeNimekiriField" />
+                  <Button fx:id="browseAutodeNimekiri" mnemonicParsing="false" onAction="#browseAutodeNimekiriButtonAction" text="Otsi" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
